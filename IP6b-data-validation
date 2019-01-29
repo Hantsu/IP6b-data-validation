@@ -1,0 +1,54 @@
+/*
+Filename:   Program 1 - IP6a
+Author:     Max Taylor
+*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int counter;
+   int num;
+   int var;
+   
+   
+   cout << "Welcome! Please enter a number. (1-10)\n";
+   cin >> num;
+   var=10-num;
+   
+   while(num < 0 || num > 10){                  // data validation
+       cout << "Sorry. That number is too large or too small.\n";
+       cin >> num;
+   }
+   
+   cout << "I'm counting..\n\n"; 
+   
+    var = 10-num;
+   if (num <=5)     // if input is less than or equal to 5
+   {
+       counter = 0;     // set counter to 0
+       while(counter<var)   // will always be true until counter reaches 0
+       {
+           counter++;       // add to counter   
+           num++;           // add to num
+           cout << num << " ";
+       }
+   }
+   
+   
+   
+   else     //else, if input is not less than or equal 5
+   {
+       counter=10;      //sets counter to 10
+   while (counter>var)  //keeps true until reaches 10
+    {
+    counter--;
+    num--;
+    cout << num << " ";
+       
+    }
+   }
+   
+    return 0;
+}
+
